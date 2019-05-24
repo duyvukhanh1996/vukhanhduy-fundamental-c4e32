@@ -1,6 +1,12 @@
 import requests
 import bs4
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
+
+# data = requests.get("https://www.facebook.com/pg/modernwomenintheworld/videos/") 
+driver = webdriver.Chrome()
+x = driver.get("https://www.facebook.com/pg/modernwomenintheworld/videos/?ref=page_internal")
 
 data = requests.get("https://www.facebook.com/pg/modernwomenintheworld/videos/") 
 
@@ -21,3 +27,8 @@ for v in ds_bai_viet:
 
 print(ket_qua)
                       
+
+
+# driver = webdriver.Chrome()
+
+driver.close()

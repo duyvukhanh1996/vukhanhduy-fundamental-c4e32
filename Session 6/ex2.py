@@ -34,8 +34,6 @@ for i in range(0,len(td_list),6):
     
     list_needed.append(dictionary)
 
-# pyexcel.save_as(records=list_needed, dest_file_name="vinamilk.xlsx")
-
 df = DataFrame(list_needed, columns = ["Title","Quy 4 - 2016","Quy 1 - 2017","Quy 2 - 2017","Quy 3 - 2017"])
 
 df.to_excel('vinamilk.xlsx',index=False)
