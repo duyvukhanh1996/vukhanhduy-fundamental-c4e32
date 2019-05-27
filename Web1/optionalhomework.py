@@ -11,42 +11,38 @@ for j in range(n):
 
 # gán các giá trị ban đầu
 count = 1
-max_row =n-1
-max_col =n-1
-min_row=0
-min_col=0
+maxx =n-1
+minn = 0
+
 
 # Lặp dần vào trong
 while count <= n**2:
     # Vẽ dòng trên
-    for i in range (min_row,max_row):
-        A[min_row][i] = count
+    for i in range (minn,maxx):
+        A[minn][i] = count
         count += 1
 
     # Vẽ dòng phải
-    for i in range (min_row,max_row):
-        A[i][max_col] = count
+    for i in range (minn,maxx):
+        A[i][maxx] = count
         count += 1
 
     # Vẽ dòng dưới
-    for i in range (max_row,min_row,-1):
-        A[max_row][i] = count
+    for i in range (maxx,minn,-1):
+        A[maxx][i] = count
         count += 1
 
     # Vẽ dòng trái
-    for i in range (max_col,min_col,-1):
-        A[i][min_col] = count
+    for i in range (maxx,minn,-1):
+        A[i][minn] = count
         count += 1
 
 
-    min_col += 1
-    min_row += 1
-    max_col -= 1
-    max_row -= 1
-
+    minn += 1
+    maxx -= 1 
     #Nếu N lẻ bị lặp vô hạn nên cần gán phần tử ở giữa rồi break
     if count == n**2:
-        A[max_row][max_col] = n**2
+        A[maxx][maxx] = n**2
         break
 
 # In kết quả
