@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+</head>
+<body>
+    
+    <h1>Menu</h1>
+ 
+    <table border= "1" width = 30% >
+        <tr>
+            <th width=65%>Tên Món</th>
+            <th width=35%>Giá</th>
+            <th width=10%></th>
+            <th width=10%></th>
+        </tr>
+        {% for dish in data %}
+        <tr>
+            <td>{{ dish.name }}</td>
+            <td>{{ dish.price }}k</td>
+            <td>
+                <form action="edit_food/{{ dish._id}}">
+                    <button type="submit">Sửa</button>
+                 </form>
+            </td>
+            <td>
+                <form action="delete_food/{{ dish._id}}">
+                    <button type="submit">Xoá</button>
+                 </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+<br>
+<hr>
+<br>
+    <form method="POST">
+            <label>Tên món</label>
+            <br>
+            <input name="name">
+            <br>
+            <label>Giá</label>
+            <br>
+            <input name="price" >
+            <p><input type="submit" value="Thêm"></p>    
+    </form>
+    
+</body>
+</html>
