@@ -2,10 +2,83 @@
     width : 100%;
 }
 
+.h-100 {
+    height: 100%;
+}
+
+.h-20 {
+    height:  20%;
+}
+
+.h-80 {
+    height:  80%;
+}
+
 .h-100vh {
     height: 100vh;
 }
 
-.bg-image111 {
-    background-image: url("../img/bg.jpg");
+
+.h-60 {
+    height: 60%;
 }
+
+.h-25 {
+    height: 25%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-15 {
+    height: 15%;
+}
+
+.h-40 {
+    height: 40%;
+}
+
+
+.w-10{
+    width: 10%
+}
+
+.w-20{
+    width: 20%
+}
+
+.w-60{
+    width: 60%
+}
+
+.btn1{
+    margin-bottom: 9%;
+    width: 15%;
+}
+
+.mb-30{
+    margin-bottom: 30%;
+}
+
+.text-large {
+    font-size: large;
+    text-decoration: none !important;
+  }
+
+.text-size-550 {
+    font-size: 550%
+}
+
+.text-size-400 {
+    font-size: 400%
+}
+
+
+.bg-loadingpage{
+    background-image: url("../static/img/bg.jpg");
+    background-size: cover;
+}
+
+
+

@@ -1,0 +1,52 @@
+<div class="h-100vh w-100 bg-loadingpage">
+    <div class="h-60 w-100">
+        <div class="h-20 d-flex align-items-center justify-content-center">
+            <div class="h-100 w-60 d-flex align-items-center justify-content-around">
+                <a href="homepage" class="text-light text-large">Home</a>
+                <a href="#" class="text-light text-large">Blogs</a>
+                <a href="#" class="text-light text-large">Gallery</a>
+                <a href="#" class="text-light text-large">About</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-light" data-toggle="modal"
+                    data-target="#exampleModalCenter">
+                    Login
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <form method="POST">
+                                        <label>Username</label>
+                                        <br>
+                                        <input name="username">
+                                        <br>
+                                        <label>Password</label>
+                                        <br>
+                                        <input name="password" type="password">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-40 w-100 d-flex align-items-center justify-content-center">
+        <a href="homepage" class="btn btn-outline-light w-10">Explore</a>
+    </div>
+</div>
